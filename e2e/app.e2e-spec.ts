@@ -1,14 +1,10 @@
-import { WebAppPage } from './app.po';
+import { InspiniaPage } from './app.po';
 
-describe('web-app App', () => {
-  let page: WebAppPage;
+describe('inspinia App', function() {
+  let page: InspiniaPage;
 
   beforeEach(() => {
-    page = new WebAppPage();
+    page = new InspiniaPage();
   });
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
 });
